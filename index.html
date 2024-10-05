@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+
+    <section class="blackjack">
+
+        <h1 id="js--chips" class="chips">Chips: </h1>
+        <h2>Dealer: <span id="dealer-sum"></span></h2>
+        <div id="js--dealer-cards" class="dealer-cards">
+            <img id="hidden" src="img/BACK.png" alt="">
+        </div>
+    
+    
+        <h2>You: <span id="your-sum"></span></h2>
+        <div id="js--your-cards" class="your-cards"></div>
+    
+        <br>
+    
+        <button id="js--hit" class="hit">Hit</button>
+        <button id="js--stand" class="stand">Stand</button>
+        <button onclick="restartGame()" id="js--restart" class="restart">Restart</button>
+        <h2 id="results"></h2>
+    </section>
+
+</body>
+</html>
