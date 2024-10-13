@@ -1,60 +1,75 @@
 *,
-*::before *::after {
+*::before,
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 html {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 62.5%;
-    color: black;
-    overflow-x: hidden;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 62.5%; 
+    height: 100%;
+    overflow: hidden;
 }
-
 body {
     font-size: 2rem;
-    width: 100%;
-    background-color: rgb(2, 55, 2);
-}
-
-.blackjack{
-    text-align: center;
-    height:100%;
-}
-
-.chips{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
 }
 
-.dealer-cards img{
-    height:17.5rem;
-    width:12.5rem;
-    margin:0.1rem;
+.blackjackTitle {
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: rgb(255, 0, 0); 
 }
 
-.your-cards img{
-    height:17.5rem;
-    width:12.5rem;
-    margin:0.1rem;
+.blackjack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%; 
+    max-width: 50rem;
+    height: 80vh; 
+    text-align: center;
+    padding: 1rem;
 }
 
-.hit{
-    width:10rem;
-    height:5rem;
-    font-size:2rem;
+.chips {
+    font-size: 2.5rem;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
-.stand{
-    width:10rem;
-    height:5rem;
-    font-size:2rem;
+.dealer-cards, .your-cards {
+    display: flex;
+    justify-content: center;
 }
 
-.restart{
-    width:10rem;
-    height:5rem;
-    font-size:2rem;
+.dealer-cards img, .your-cards img {
+    height: 15rem; 
+    width: 10rem;  
+    margin: 0.1rem;
+}
+
+button {
+    width: 10rem;
+    height: 5rem;
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+#results {
+    font-size: 2.5rem;
+    margin-top: 1rem;
 }
