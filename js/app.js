@@ -210,7 +210,7 @@ function resetVariables(){
 }
 
 function resetScreen(){
-    document.getElementById("js--dealer-cards").innerHTML = '<img id="hidden" src="img/BACK.png" alt="">'; 
+    document.getElementById("js--dealer-cards").innerHTML = ''; 
     document.getElementById("js--your-cards").innerHTML = ''; 
     document.getElementById("dealer-sum").innerText = "";
     document.getElementById("your-sum").innerText = "";
