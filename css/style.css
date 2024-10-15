@@ -55,9 +55,7 @@ body {
 .dealer-cards, .your-cards {
     display: flex;
     justify-content: center;
-    transition: box-shadow 0.3s ease in ease-in-out;
-    opacity: 1;
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+   
 }
 
 .dealer-cards img, .your-cards img {
